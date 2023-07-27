@@ -18,6 +18,9 @@ const loadInitialTemplate = () => {
     body.innerHTML = template;
 }
 
+const getUsers = async () => {
+    
+}
 const addFormListener = () => {
     const userForm = document.getElementById('user-form');
     userForm.onsubmit = async (e) => {
@@ -27,7 +30,13 @@ const addFormListener = () => {
         console.log(data.name);
         await fetch('/users', {
             method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
         })
+        userForm.reset();
+        getUsers();
     }
 }
 
