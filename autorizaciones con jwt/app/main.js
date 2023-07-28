@@ -22,7 +22,7 @@ const loadInitialTemplate = () => {
 const getAnimals = async () => {
 	const response = await fetch('/animals', {
 		headers: {
-			'Authorization': localStorage.getItem('jwt')
+			Authorization: localStorage.getItem('jwt')
 		}
 	})
 	const animals = await response.json()
@@ -40,7 +40,7 @@ const getAnimals = async () => {
 			await fetch(`/animals/${animal._id}`, {
 				method: 'DELETE',
 				headers:{
-					'Authorization': localStorage.getItem('jwt')
+					Authorization: localStorage.getItem('jwt')
 				}
 			})
 			animalNode.parentNode.remove()
@@ -61,7 +61,7 @@ const addFormListener = () => {
 			body: JSON.stringify(data),
 			headers: {
 				'Content-Type': 'application/json',
-				'Authorization': localStorage.getItem('jwt')
+				Authorization: localStorage.getItem('jwt')
 			}
 		})
 		animalForm.reset()
