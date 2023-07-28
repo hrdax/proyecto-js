@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-    res.status(404).send('Que estas haciendo !! AWAUWU ce enoja y mueve la colita*');
+    res.status(404).send('Ruta no encontrada');
 });
 
 app.listen(port, () => {
