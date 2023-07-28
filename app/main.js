@@ -1,4 +1,3 @@
-const User = require("../user.controller");
 
 const loadInitialTemplate = () => {
     const template = `
@@ -31,12 +30,12 @@ const getUsers = async () => {
     const userList = document.getElementById('user-list');
     userList.innerHTML = users.map(user => template(user)).join('');
     users.forEach(user => {
-        const userNode = document.querySelector(`[data-id="${user._id}]`)
-        userNode.onclick = async (e) => {
+        const userNode = document.querySelector(`[data-id="${user._id}"]`)
+        userNode.onclick = async e => {
             await fetch(`/users/${user._id}`, {
                 method: 'DELETE',
             });
-            userNode.parentNode.removeChild(UserNode);
+            userNode.parentNode.remove();
             alert('Usuario eliminado');
         }
         
