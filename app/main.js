@@ -12,8 +12,9 @@ const loadInitialTemplate = () => {
             <input name="lastname" />
         </div>
         <button type="submit">Enviar</button>
-        <ul id="user-list"></ul>
-    </form>`;
+    </form>
+    <ul id="user-list"></ul>
+    `;
 
     const body = document.getElementsByTagName('body')[0];
     body.innerHTML = template;
