@@ -14,6 +14,8 @@ const findAndAssignUser = async (req, res, next) => {
         if (!user){
             return res.status(401).end();
         }
+        req.user = user
+        next()
     } catch (e) {
         next(e);
     }
