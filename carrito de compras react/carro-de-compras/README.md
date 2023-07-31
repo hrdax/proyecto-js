@@ -1,2 +1,3 @@
 <h1>Carro de compras sencillo con react</h1>
-![imagen carro react](https://github.com/hrdax/proyecto-js/assets/74321905/33d27996-f0c8-40fc-8c6d-62e3ec3fc773)
+
+![imagen carro react](https://github.com/hrdax/proyecto-js/assets/74321905/dd5b3ef7-666b-4ac4-9f06-44d062174cb6)
