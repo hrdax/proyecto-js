@@ -11,9 +11,6 @@ const styles = {
     },
     container: {
         width: '1200px',
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between'
     }
 }
 
