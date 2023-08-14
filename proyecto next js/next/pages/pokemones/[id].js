@@ -6,7 +6,11 @@ const Pokemon = ( { data } ) => {
         <div>
             <h1 style={{ textAlign: 'center', margin: 'auto' }}>{data.name} numero #{data.id}</h1>
             <Image src={data.sprites.front_default} width={400} height={400} alt={data.name} style={{ display: 'block', margin: 'auto' }}/>
-            <Button><Link href="/">Volver al Inicio</Link></Button>
+            <Link href="/">
+                <Button>
+                    Volver al Inicio
+                </Button>
+            </Link>
         </div>
     )
 }

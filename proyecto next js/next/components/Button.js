@@ -1,7 +1,7 @@
 
 const styles = {
     button: {
-        backgroundColor: '#0A283E',
+        backgroundColor: 'green',
         color: '#fff',
         padding: '15px 20px',
         border: 'none',

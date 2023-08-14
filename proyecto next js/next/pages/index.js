@@ -2,12 +2,11 @@ import Link from 'next/link'
 import Button from 'components/Button'
 
 const Pokemon = ({ pokemon }) => {
-  console.log(pokemon)
   const id = pokemon.url.split('/').filter(x => x).pop()
   return (
     <li>
       <Link href={`pokemones/${id}`}>{pokemon.name}</Link>
-      {/* <Button></Button> */}
+      <Link href={`pokemones/${id}`}><Button>Ver Pokemon</Button></Link>
       <br/>
     </li>
   )
