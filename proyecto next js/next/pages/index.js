@@ -15,9 +15,9 @@ const Pokemon = ({ pokemon }) => {
 export default function Pokemones({ pokemones }) {
   return (
     <div>
-      <h1 style={{ textAlign: 'center', margin: 'auto' }}>Pokemones</h1>
+      <h1 className="centrar">Pokemones</h1>
       <br/>
-        <ul style={{ textAlign: 'center', margin: 'auto' }}>
+        <ul className="centrar">
           {pokemones.map(pokemon => <Pokemon pokemon={pokemon} key={pokemon.name} />)}
         </ul>
     </div>
