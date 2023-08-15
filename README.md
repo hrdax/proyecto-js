@@ -1,5 +1,5 @@
 # proyecto-js
-practicando express js, mongoose(orm), auth jwt, react, next js
+practicando express js, mongoose(orm), auth jwt, react, next js, typescript
 
 ejemplo de uno de los mini proyectos carro de compras con react
 
