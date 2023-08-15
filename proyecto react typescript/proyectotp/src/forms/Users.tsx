@@ -32,7 +32,7 @@ export default function UserForm({ handleSubmit }: UserFormProps) {
       return(
         <>
             <Input value={form.name}  name='name' placeholder='Nombre' handleChange={ handleChange } />
-            <Input value={form.username} name='username' placeholder='Usuario' handleChange={ handleChange } />
+            <Input value={form.username} name='username' placeholder='Usuario' handleChange={ handleChange } /><br/><br/>
             <Button handleCLick={ handleClick }>Enviar</Button>
         </>
       )
